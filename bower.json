@@ -1,0 +1,20 @@
+{
+  "name": "htask1",
+  "description": "htask1",
+  "main": "index.js",
+  "authors": [
+    "ellaylone"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Ellaylone/htask1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+    "dependencies": {
+        "normalize.css": "*"
+    }
+}

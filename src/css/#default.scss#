@@ -1,0 +1,15 @@
+html {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    font-family: 'PT Serif', serif;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+}
+
+.clear {
+    clear: both;
+}

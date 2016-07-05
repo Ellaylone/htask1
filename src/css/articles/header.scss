@@ -1,0 +1,41 @@
+.article__header {
+    height: 80vh;
+    margin-bottom: 8vh;
+    background: url('/img/Unknown-6.jpeg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.article__header__title {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 4em;
+    letter-spacing: 33px;
+    margin: 30px auto 0;
+    text-transform: uppercase;
+}
+
+.article__header__info {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1em;
+    letter-spacing: 9px;
+    margin: 30px auto 0;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.article__header__credits {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}

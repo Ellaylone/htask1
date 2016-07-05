@@ -1,0 +1,32 @@
+{
+  "name": "htask1",
+  "version": "1.0.0",
+  "description": "htask1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Ellaylone/htask1.git"
+  },
+  "author": "ellaylone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ellaylone/htask1/issues"
+  },
+    "dependencies": {
+        "gulp": "*",
+        "gulp-autoprefixer": "*",
+        "gulp-watch": "*",
+        "gulp-sass": "*",
+        "gulp-rigger": "*",
+        "browser-sync": "*",
+        "rimraf": "*",
+        "gulp-clean-css": "*",
+        "gulp-imagemin": "*",
+        "imagemin-pngquant": "*",
+        "gulp-sourcemaps": "*",
+        "gulp-uglify": "*"
+    }
+}

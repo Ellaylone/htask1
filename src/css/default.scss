@@ -1,0 +1,16 @@
+html {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    font-family: 'PT Serif', serif;
+    overflow-x: hidden;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+}
+
+.clear {
+    clear: both;
+}

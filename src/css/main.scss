@@ -1,0 +1,16 @@
+@import "../../bower_components/normalize.css/normalize.css";
+
+@import "default.scss";
+
+@import "articles/header.scss";
+
+@import "articles/article.scss";
+
+@media (min-width: 768px) and (max-width: 954px){
+    @import "articles/article-md.scss";
+}
+
+@media (max-width: 768px){
+    @import "articles/header-sm.scss";
+    @import "articles/article-sm.scss";
+}
