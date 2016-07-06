@@ -21,6 +21,10 @@
     @import "articles/header-xs.scss";
 }
 
+@media (max-width: 400px){
+    @import "articles/article-xs-400.scss";
+}
+
 @media (max-height: 450px){
     @import "articles/header-xsh.scss";
 }

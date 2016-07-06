@@ -9,10 +9,15 @@
 }
 
 .article__content__additional-simple {
-    margin-left: 0;
-    margin-right: 0;
     padding-left: 0;
     padding-right: 0;
+}
+
+.article__content__additional__image {
+    margin: 0 auto 10px;
+    width: 320px;
+    display: block;
+    padding: 0px;
 }
 
 .article__content__additional-simple__info {
