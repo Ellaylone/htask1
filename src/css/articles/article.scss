@@ -1,5 +1,10 @@
 .article {
     padding-top: 80vh;
+    position: relative;
+}
+
+.article-header-100 {
+    padding-top: 100vh;
 }
 
 .article__wrap {
@@ -25,6 +30,11 @@
     font-size: 18px;
 }
 
+.article__content__text__header {
+    font-size: 2em;
+    margin: 0px;
+}
+
 .article__content__text > p {
     line-height: 27px;
     margin: 25px 0;
@@ -33,10 +43,7 @@
 .article__content__text__first-letter {
     font-size: 60px;
     font-weight: bold;
-}
-
-p.article__content__text__first-p {
-    margin: -16px 0 25px;
+    line-height: 0;
 }
 
 .article__content__text > p:last-child {
@@ -55,8 +62,23 @@ p.article__content__text__first-p {
     box-sizing: border-box;
 }
 
+.article__content__additional-simple {
+    border-left: none;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.article__content__additional__image {
+    margin-bottom: 10px;
+}
+
 .article__content__additional_end {
     position: absolute;
     right: 12px;
     bottom: 0px;
+}
+
+.article__content__additional_small {
+    font-size: 13px;
+    font-weight: normal;
 }

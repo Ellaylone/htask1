@@ -4,7 +4,6 @@
 
 .article__content {
     max-width: none;
-    margin-bottom: 10vh;
 }
 
 .article__content__text {
@@ -13,10 +12,6 @@
     max-width: 505px;
     min-width: 288px;
     margin: 0 auto 5vh;
-}
-
-.article__content__text > p:first-child {
-    margin-top: -10px;
 }
 
 .article__content__additional {
@@ -31,6 +26,13 @@
 
 .article__content__additional_end {
     position: initial;
+    margin-bottom: 0;
+}
+
+.article__content__additional_small {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
 }
 
 p.article__break-point {

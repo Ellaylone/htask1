@@ -82,7 +82,7 @@ gulp.task('image:build', function(){
     gulp.src(path.src.img)
         .pipe(responsive(
             {
-                '*.*':[
+                'Unknown*.*':[
                     {
                         width: 320,
                         height: 455,
@@ -97,16 +97,45 @@ gulp.task('image:build', function(){
                         rename: ({
                             suffix: '-md'
                         }),
-                    },
-                    {
-                        
                     }
                 ],
+                'full-*.*':[
+                    {
+                        width: 320,
+                        height: 568,
+                        crop: 'center',
+                        rename: ({
+                            suffix: '-xs'
+                        })
+                    },{
+                        width: 768,
+                        height: 1024,
+                        crop: 'center',
+                        rename: ({
+                            suffix: '-md'
+                        })
+                    }
+                ],
+                'info-*.*':[
+                    {
+                        width: 320
+                    }
+                ]
             },
             {
                 errorOnEnlargement: false
             }
         ))
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()],
+            interlaced: true
+        }))
+        .pipe(gulp.dest(path.build.img))
+        .pipe(reload({stream: true}));
+
+     gulp.src(path.src.img)
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
@@ -143,7 +172,7 @@ gulp.task('watch', function(){
         gulp.start('js:build');
     });
      watch([path.watch.img], function(event, cb) {
-        gulp.start('img:build');
+        gulp.start('image:build');
      });
      watch([path.watch.fonts], function(event, cb) {
         gulp.start('fonts:build');
