@@ -85,13 +85,15 @@ gulp.task('image:build', function(){
                 '*.*':[
                     {
                         width: 320,
-                        //crop: true,
+                        height: 455,
+                        crop: 'center',
                         rename: ({
                             suffix: '-xs'
                         })
                     },{
                         width: 768,
-                        //crop: true,
+                        height: 820,
+                        crop: 'center',
                         rename: ({
                             suffix: '-md'
                         }),
