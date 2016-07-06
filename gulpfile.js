@@ -80,6 +80,31 @@ gulp.task('css:build', function () {
 
 gulp.task('image:build', function(){
     gulp.src(path.src.img)
+        .pipe(responsive(
+            {
+                '*.*':[
+                    {
+                        width: 320,
+                        //crop: true,
+                        rename: ({
+                            suffix: '-xs'
+                        })
+                    },{
+                        width: 768,
+                        //crop: true,
+                        rename: ({
+                            suffix: '-md'
+                        }),
+                    },
+                    {
+                        
+                    }
+                ],
+            },
+            {
+                errorOnEnlargement: false
+            }
+        ))
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
