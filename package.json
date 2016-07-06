@@ -27,6 +27,8 @@
         "gulp-imagemin": "*",
         "imagemin-pngquant": "*",
         "gulp-sourcemaps": "*",
-        "gulp-uglify": "*"
+        "gulp-uglify": "*",
+        "sharp": "*",
+        "gulp-responsive": "*"
     }
 }

@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
+    responsive = require('gulp-responsive'),
     
     reload = browserSync.reload;
 
