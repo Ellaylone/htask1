@@ -1,14 +1,25 @@
 .article__header {
     height: 80vh;
-    margin-bottom: 8vh;
-    background: url('../img/Unknown-6.jpeg');
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: cover;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+.article__header__image {
+    height: auto;
+    min-height: 80vh;
+    max-height: 80vh;
+    width: 100%;
+}
+
+.article__header__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 .article__header__title {
