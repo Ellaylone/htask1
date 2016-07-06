@@ -1,6 +1,14 @@
 <div class="article">
     <div class="article__header">
-        <img class="article__header__image" alt="ПЕШИЕ ПОХОДЫ" srcset="img/Unknown-12.jpeg 1280w, img/Unknown-12-md.jpeg 768w, img/Unknown-12-xs.jpeg 320w" />
+        <picture class="article__header__image">
+            <source media="(max-width: 320px)"
+                    srcset="img/Unknown-12-xs.jpeg">
+            <source media="(max-width: 768px)"
+                    srcset="img/Unknown-12-md.jpeg">
+            <source
+                srcset="img/Unknown-12.jpeg">
+            <img src="img/Unknown-12.jpeg" />
+        </picture>
         <div class="article__header__container">
             <h2 class="article__header__title">ПЕШИЕ ПОХОДЫ</h2>
         </div>

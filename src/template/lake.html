@@ -1,6 +1,14 @@
 <div class="article article-header-100">
     <div class="article__header article__header-100">
-        <img class="article__header__image article__header__image-100" alt="ОЗЕРО СЁРВАГСВАТН" srcset="img/full-1.jpeg 1280w, img/full-1-md.jpeg 768w, img/full-1-xs.jpeg 320w" />
+        <picture class="article__header__image">
+            <source media="(max-width: 320px)"
+                    srcset="img/full-1-xs.jpeg">
+            <source media="(max-width: 768px)"
+                    srcset="img/full-1-md.jpeg">
+            <source
+                srcset="img/full-1.jpeg">
+            <img src="img/full-1.jpeg" />
+        </picture>
     </div>
     <div class="article__wrap">
         <div class="article__content">

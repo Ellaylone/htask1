@@ -97,6 +97,10 @@ gulp.task('image:build', function(){
                         rename: ({
                             suffix: '-md'
                         }),
+                    },{
+                        width: 1280,
+                        height: 640,
+                        crop: 'center'
                     }
                 ],
                 'full-*.*':[
@@ -135,15 +139,15 @@ gulp.task('image:build', function(){
         .pipe(gulp.dest(path.build.img))
         .pipe(reload({stream: true}));
 
-     gulp.src(path.src.img)
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()],
-            interlaced: true
-        }))
-        .pipe(gulp.dest(path.build.img))
-        .pipe(reload({stream: true}));
+     //gulp.src(path.src.img)
+       // .pipe(imagemin({
+         //   progressive: true,
+           // svgoPlugins: [{removeViewBox: false}],
+            //use: [pngquant()],
+            //interlaced: true
+        //}))
+        //.pipe(gulp.dest(path.build.img))
+        //.pipe(reload({stream: true}));
 });
 
 gulp.task('fonts:build', function(){

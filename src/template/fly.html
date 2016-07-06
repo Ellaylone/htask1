@@ -1,6 +1,14 @@
 <div class="article">
     <div class="article__header">
-        <img class="article__header__image" alt="ПЕРЕЛЁТ И ДОРОГА" srcset="img/Unknown-9.jpeg 1280w, img/Unknown-9-md.jpeg 768w, img/Unknown-9-xs.jpeg 320w" />
+        <picture class="article__header__image">
+            <source media="(max-width: 320px)"
+                    srcset="img/Unknown-9-xs.jpeg">
+            <source media="(max-width: 768px)"
+                    srcset="img/Unknown-9-md.jpeg">
+            <source
+                srcset="img/Unknown-9.jpeg">
+            <img src="img/Unknown-9.jpeg" />
+        </picture>
         <div class="article__header__container">
             <h2 class="article__header__title">ПЕРЕЛЁТ И ДОРОГА</h2>
         </div>
